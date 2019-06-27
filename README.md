@@ -10,7 +10,7 @@ this code plots the graph of policy of each agents.
 
 1.Clone this repository
 ```
-git clone https://github.com/tocom242242/minimax_q_sample.git
+git clone https://github.com/tocom242242/minimax_q.git
 ```
 
 2.Run this sample, 
