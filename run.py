@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from agents.minimaxQ import MiniMaxQLearner 
-from agents.policy import EpsGreedyQPolicy
-from games.simple_game import SimpleGame
+from minimaxQ import MiniMaxQLearner 
+from policy import EpsGreedyQPolicy
+from simple_game import SimpleGame
 import ipdb
 
 if __name__ == '__main__':
