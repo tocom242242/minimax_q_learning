@@ -25,6 +25,8 @@ if __name__ == '__main__':
     plt.plot(np.arange(len(agent1.pi_history)),agent1.pi_history, label="agent1's pi(0)")
     plt.plot(np.arange(len(agent2.pi_history)),agent2.pi_history, label="agent2's pi(0)")
     plt.ylim(0, 1)
+    plt.xlabel("episode")
+    plt.ylabel("pi(0)")
     plt.legend()
     plt.savefig("result.jpg")
     plt.show()
