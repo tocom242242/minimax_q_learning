@@ -1,6 +1,6 @@
 import numpy as np
 
-class SimpleGame():
+class MatrixGame():
     def __init__(self):
         self.reward_matrix = self._create_reward_table()
 

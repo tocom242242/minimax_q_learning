@@ -1,9 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from minimaxQ import MiniMaxQLearner 
+from minimax_q_learner import MiniMaxQLearner 
 from policy import EpsGreedyQPolicy
-from simple_game import SimpleGame
-import ipdb
+from matrix_game import MatrixGame
 
 if __name__ == '__main__':
     nb_episode = 100
@@ -11,7 +10,7 @@ if __name__ == '__main__':
     agent1 = MiniMaxQLearner(aid=0, alpha=0.1, policy=EpsGreedyQPolicy(), actions=np.arange(2))  # agentの設定
     agent2 = MiniMaxQLearner(aid=1, alpha=0.1, policy=EpsGreedyQPolicy(), actions=np.arange(2))  # agentの設定
 
-    game = SimpleGame()
+    game = MatrixGame()
     for episode in range(nb_episode):
         action1 = agent1.act()
         action2 = agent2.act()
